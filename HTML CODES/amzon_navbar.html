@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon-like Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Container */
+    .navbar {
+      background-color: #232f3e;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* Logo */
+    .navbar .logo {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffa41c;
+      text-decoration: none;
+    }
+
+    /* Navbar Links */
+    .navbar .links {
+      display: flex;
+      margin-left: 20px;
+      gap: 20px;
+    }
+
+    .navbar .links a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .navbar .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Search Bar */
+    .navbar .search-bar {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar .search-bar input {
+      padding: 5px;
+      width: 250px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .navbar .search-bar button {
+      background-color: #ffa41c;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .navbar .search-bar button:hover {
+      background-color: #d48c1d;
+    }
+
+    /* Cart Icon */
+    .navbar .cart {
+      margin-left: 20px;
+    }
+
+    .navbar .cart a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <img src="image src/download.png" width="120" height="50" alt="loading">
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="#">Deals</a>
+      <a href="#">Categories</a>
+      <a href="#">Orders</a>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products...">
+      <button>Search</button>
+    </div>
+    <div class="cart">
+      <a href="#">🛒 Cart</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content" style="padding: 20px;">
+    <h1>Welcome to MyShop</h1>
+    <p>Find great deals and amazing products here!</p>
+  </div>
+</body>
+</html>
