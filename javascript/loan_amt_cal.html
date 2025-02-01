@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let p = prompt("Enter the loan amount : ")
+        let r = prompt("Enter the rate of interest : ")
+        let n = prompt("Enter Totle months : ")
+        let rate = r / 12 / 100;
+
+        let emi = (p * rate * Math.pow(1 + rate, n)) / (Math.pow(1 + rate, n) - 1);
+
+       alert("Monthly EMI is = " + emi)
+        
+        
+
+    </script>
+</head>
+<body>
+    <h1>Monthly loan amount calculator</h1>
+</body>
+</html>
